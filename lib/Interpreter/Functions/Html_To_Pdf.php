@@ -28,8 +28,6 @@ class Html_To_Pdf extends RegistrableFunction {
 	}
 
 	public function run($html = '', $config = [], $pos = []): ?string {
-		$this->logger->warning("[File scripts] Using deprecated function `html_to_pdf`, this function will be removed in a future release.");
-
 		try {
 			// Normalise format array (Lua uses 1-index)
 			if (is_array($config['format'] ?? null) && !empty($config['format'])) {

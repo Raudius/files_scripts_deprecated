@@ -1,4 +1,6 @@
-This app packages the deprecated `html_2_pdf` function from the `files_scripts` Nextcloud app.
+This app packages the deprecated and removed functions from the `files_scripts` Nextcloud app.
+
+## Functions
 
 ### html_to_pdf
 
