@@ -2,8 +2,8 @@
 
 namespace OCA\FilesScriptsDeprecated\Interpreter;
 
-use OCA\FilesScripts\Interpreter\Functions\Template\Html_To_Pdf;
 use OCA\FilesScripts\Interpreter\IFunctionProvider;
+use OCA\FilesScriptsDeprecated\Interpreter\Functions\Html_To_Pdf;
 
 class FunctionProvider implements IFunctionProvider {
 	private array $functions;
