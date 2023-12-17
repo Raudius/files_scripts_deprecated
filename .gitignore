@@ -1,0 +1,9 @@
+.idea
+node_modules/
+js/
+build/
+vendor/
+*.tar.gz
+*.spec
+.php-cs-fixer.cache
+.phpunit.result.cache
