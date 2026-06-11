@@ -44,6 +44,11 @@ class Html_To_Pdf extends RegistrableFunction {
 			}
 			return $mpdf->Output('', Destination::STRING_RETURN);
 		} catch (\Throwable $e) {
+			$this->logger->error('Failed to generate PDF',  [
+				'exception' => $e::class,
+				'message' => $e->getMessage(),
+				'trace' => $e->getTraceAsString(),
+			]);
 			return null;
 		}
 	}
